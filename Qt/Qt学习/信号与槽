@@ -1,0 +1,13 @@
+MainWindow类的定义中：
+connect(this->ui->pushButton_2,SIGNAL(clicked(bool)),this,SLOT(login()));
+//pushButtton_2为UI中的控件名称
+//login是MainWindow的新定义的成员函数
+
+MainWindow.h中：
+添加
+private slots:
+	void login();
+
+MainWindow.cpp中：
+添加login函数的定义
+
