@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+  <head>
+    <!-- highlightjs -->
+    <link rel="stylesheet" href="highlightjs/default.min.css">
+    <script src="highlightjs/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+<div id="app">
+    {{ message }}
+  </div>
+  
+<script>
+var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue!'
+    }
+  })
+</script>  
+<hr/>
+
+<h3>知识：</h3>
+  双大括号会将数据解释为普通文本，而非 HTML 代码。如 
+  <pre><code class="language-html">&lt;p&gt;Using mustaches: {{ rawHtml }}&lt;/p&gt;</code></pre>
+  为了输出真正的 HTML，你需要使用 v-html 指令。如
+  <pre><code class="language-html">&lt;p&gt;Using v-html directive: &lt;span v-html="rawHtml"&gt;&lt;/span&gt;&lt;/p&gt;</code></pre>
+</body>
+</html>
