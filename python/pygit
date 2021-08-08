@@ -1,0 +1,25 @@
+#!/usr/bin/python
+import os
+import subprocess
+
+print("[1]pull")
+print("[2]commit + push")
+
+num=int(input("请输入您要执行的操作的序号:"))
+
+if num==1:
+    confirm=input("您将执行以下命令:\ngit pull\n请确认[y/n]")
+    if confirm == "y" or confirm == "Y":
+        output = subprocess.run("git pull")
+        print(output)
+    else:
+        pass
+elif num==2:
+    str=input("您准备将这次提交的信息录入为:\n")
+    confirm=input("您将执行以下命令:\ngit add -A\ngit commit -m \""+str+"\"\ngit push\n请确认[y/n]")
+    if confirm == "y" or confirm == "Y":
+        output = subprocess.run("git add -A; git commit -m \""+str+"\";git push")
+        print(output)
+    else:
+        pass
+else:pass

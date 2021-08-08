@@ -1,0 +1,28 @@
+注释
+# 单行注释
+# 多行注释就是多个单行注释
+
+for语句
+           python                |          C++
+---------------------------------|-----------------------------------
+    for i in range(n)            |    for(int i=0;i<n;++i)
+        statement                |     { statement; }
+---------------------------------|-----------------------------------
+    for i in range(min,max)      |    for(int i=min;i<max;i++)
+        statement                |     { statement; }
+---------------------------------|-----------------------------------
+    for i in range(min,max,step) |    for(int i=min;i<max;i+=step)
+        statement                |     { statement; }
+
+
+强制类型转换
+    type(expression)
+
+函数定义
+def name():
+    statement   #函数体中每一行都要缩进
+    statement   #同一函数的函数体中每行缩进必须相同
+    statement
+
+字符串乘法
+"hello"*3   #得"hellohellohello"

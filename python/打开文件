@@ -1,0 +1,10 @@
+name = open("filename")
+statement;
+name.close()
+
+
+with open("filename") as name:
+    statement;
+    statement;
+    statement;
+其他语句
