@@ -1,0 +1,11 @@
+<Button
+android:id="..."
+android:layout_height="..."
+android:layout_width="..."
+android:text="..."
+android:textAllCap="..."/>
+
+-------------------
+textAllCap:
+true或false,分别表示是、否自动大写
+不写此属性时默认为true

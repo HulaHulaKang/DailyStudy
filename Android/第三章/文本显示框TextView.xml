@@ -1,0 +1,16 @@
+<TextView
+android:id="@+id/自定id"
+android:layout_width="match_parent或wrap_content"
+android:layout_height="match_parent或wrap_content"
+android:gravity="文本对齐方式如center"
+android:text="显示内容"/>
+
+----------------------------
+match_parent
+继承父类
+
+wrap_content
+恰好足够包含其中内容
+-------------------------------
+文本对齐方式：
+top bottom left right center等

@@ -1,0 +1,33 @@
+git config --list --show-origin		#显示所有已经设定的配置(不加"--show-origin"就不显示配置保存在哪个文件中)
+git config user.name		#显示指定的配置 
+git config --global core.editor "vim"	#设置默认编辑器（不同编辑器需要加不同参数，vim恰好不需要参数）		#https://git-scm.com/book/en/v2/Appendix-C%3A-Git-Commands-Setup-and-Config#ch_core_editor
+git config --global init.defaultBranch localBranch_kang		#设置默认分支名称
+#不加--global只适用于当前仓库
+#加--global适用于所有仓库
+
+git init	#在当前目录创建一个git仓库
+git clone https://github.com/libgit2/libgit2	#从url克隆一个仓库，目标文件夹为当前文件夹
+git clone https://github.com/libgit2/libgit2 mylibgit	#从url克隆一个仓库，目标文件夹为mylibgit
+git status	#查看当前目录下git仓库的状态
+git status -s	#git status的简洁版
+git diff系列	#查看文件发生了哪些变化
+
+git commit(不带参数)	#将打开默认编辑器供输入提交说明
+git commit -m "说明"
+git commit --amend	#重新进行最后一次的提交，覆盖原来提交的内容（记录中只保留后一次的提交记录）
+
+git  log	#显示提交历史
+git  log -p	#显示提交历史，包含每次的修改内容(超详细版)
+git log --oneline --decorate --graph --all	#很少很好看
+
+git remote
+git remote -v	#查看远程...
+git remote add pb https://github.com/paulboone/ticgit	#emmmmmm...................
+git fetch pb
+# pb 就是 git push <remote> <branch>	中的	<remote>
+git remote show pd	#显示pd的详细信息
+git remote rename pb paul	#改名
+git remote remove paul	#删除
+
+git push <remote> <branch>	#branch是本地分支	#remote就是上面git remote add得到的
+

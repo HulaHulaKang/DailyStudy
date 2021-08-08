@@ -1,0 +1,13 @@
+提交：
+cd /home/K/Document/linux使用笔记
+git add -A
+git commit -m "提交说明"
+git push origin main
+
+
+拉取：
+git pull
+
+
+网址：https://github.com/HulaHulaKang/Linux.git
+用户名：HulaHulaKang

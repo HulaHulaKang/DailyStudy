@@ -1,0 +1,18 @@
+<EditText
+android:id="..."
+android:layout_height="..."
+android:layout_width="..."
+android:hint="..."
+android:maxLines="..."/>
+
+---------------------------
+hint    提示文字
+---------------------------
+maxLines       最大行数
+
+
+-----------------------------
+//获取输入内容:
+Private EditText et=(EditText)findViewById(R.id.xxx);
+String 标识符1=et.getText.toString();
+

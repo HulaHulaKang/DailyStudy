@@ -1,0 +1,2 @@
+安装KDE Partition Manager：
+sudo pacman -S partitionmanager

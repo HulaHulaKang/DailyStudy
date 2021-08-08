@@ -1,0 +1,22 @@
+section .data
+       text db "Hello, world!",10
+#10表示换行符
+
+section .text
+	global _start
+
+_start:
+	call _PrintHello
+	mov rax,60	#ID
+	mov rdi,0	#文件描述符
+	syscall
+
+_PrintHello:
+	mov rax,1	#ID
+	mov rdi,1	#文件描述符  0——stdin 1——stdout 2——stderr
+	mov rsi,text	#内存地址
+	mov rdx,14 	#字符串text的长度
+	syscall
+	ret
+
+#rip寄存器：储存下一条指令的地址

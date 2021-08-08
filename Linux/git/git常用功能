@@ -1,0 +1,26 @@
+#首次使用:
+git init
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+#提交
+git add -A
+git commit -m "一些说明"
+
+#拉取
+#若未绑定：
+git pull <远程> <分支>
+#例如：
+git pull https://github.com/HulaHulaKang/Linux.git localbranch
+#要绑定，得执行一遍上传的过程，绑定后直接用git pull (不加选项)
+
+#上传
+#先执行git remote add:
+git remote add MyRomoteRepo-Linux(自定义的名字) https://github.com/HulaHulaKang/Linux.git
+#再执行git push --set-upstream:
+git push --set-upstream MyRomoteRepo-Linux localbranch
+#以后只需执行:
+git push
+
+#删除本地仓库
+#只需删除.git文件夹即可实现

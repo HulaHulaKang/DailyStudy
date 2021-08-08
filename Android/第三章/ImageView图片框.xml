@@ -1,0 +1,18 @@
+<ImageView
+android:id="..."
+android:layout_width="..."
+android:layout_height="..."
+android:src="@drawable/图片名"/>
+
+
+----------------------------
+src怎么写：
+@drawable表示res/drawable-xhdpi，图片要放在该目录下
+文件名不用写扩展名
+
+
+----------------------------
+切换ImageView的图片：
+private ImageView iv=(ImageView)findViewById(R.id.xxx);
+iv.setImageResource(R.drawable.新图片名)
+//R.drawable.图片名 表示的路径等价于@drawable/图片名
