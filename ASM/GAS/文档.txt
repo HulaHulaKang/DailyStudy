@@ -1,0 +1,2 @@
+https://sourceware.org/binutils/docs/as/
+https://cs.lmu.edu/~ray/notes/gasexamples/
