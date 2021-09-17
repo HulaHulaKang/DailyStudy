@@ -6,3 +6,4 @@ efibootmgr -c -w -L "ubuntu" -d /dev/nvme0n1 -p 1 -l EFI/ubuntu/grubx64.efi
 ### /dev/nvme0n1------EFI分区所在磁盘（注意是磁盘，不是分区）
 ### (-p后面的)1--------EFI分区在磁盘的第几个分区就是几
 ### EFI/ubuntu/grubx64.efi--------添加项的efi文件路径（该文件在EFI分区中，路径为相对于改分区最高级目录(包含`EFI`文件夹)的路径）
+### 若要指定添加项的id,需要添加`-b 50`(50改成需要设置的id)
